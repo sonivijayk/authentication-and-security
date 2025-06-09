@@ -128,8 +128,8 @@ Here The Relying Party verifies that `acr = phrh` was met using idToken param ac
   "aud": "my-client",
   "exp": 1749445199,
   "iat": 1749358800,
-  "state" sx35ea2107fea12a, 
-  "nonce" set3wsxfe54s2233,
+  "state": sx35ea2107fea12a, 
+  "nonce": set3wsxfe54s2233,
   "name": "Test User",
   "email": "user@email.com",
   "email_verified": true
