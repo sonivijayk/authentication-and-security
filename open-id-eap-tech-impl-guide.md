@@ -35,7 +35,10 @@ It also introduces one new `amr` (Authentication Method Reference) value:
 |-----------|---------|
 | `pop`     | Proof-of-Possession of a key |
 
-These values are used in OpenID Connect flows to negotiate or assert stronger authentication context between Relying Party and OpenId based Identity Provider.
+These values are used in OpenID Connect flows to negotiate or assert stronger authentication context between Relying Party and OpenId based Identity Provider. Fig 1 below describes high level interaction model between Relying Party (RP) and Identity Provider (IdP)
+
+![Authorization Request](./authentication-and-security/images/open-id-eap-tech-impl/eap-rp-idp-interaction.png)
+
 
 ---
 
