@@ -3,7 +3,9 @@
 
 ## Background
 
-**Have you ever wondered why your bank, digital wallets or healthcare provider is asking you to enroll into passkey? Let me explain it -**  
+Have you ever wondered why your bank, digital wallets or healthcare provider is asking you to enroll into passkey? 
+
+Let me explain it -  
 
 With the increasing prevalence of phishing attacks, organizations are enhancing user authentication methods in the risk based authentication processes. Over the last couple of years, OpenId Foundation OpenID published Connect Extended Authentication Profile aka. EAP standard and interoperable solution which allows Relying Parties to confidently request and validate phishing-resistant, hardware-backed authentication using industry adoped mehods like FIDO2/WebAuthn.
 
