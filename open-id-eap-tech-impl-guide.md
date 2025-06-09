@@ -1,4 +1,4 @@
-# OpenID Connect Extended Authentication Profile (EAP) – A Technical Guide for Phishing-Resistant Authentication
+# OpenID Connect Extended Authentication Profile (EAP) - A Technical Guide for Phishing-Resistant Authentication
 
 
 ## Background
@@ -14,15 +14,15 @@ EAP profile in authentication workflows significantly elevates security and trus
 
 In this article I will try to explain - 
 
-- What Is the EAP ACR Values 1.0?
-- Example Technical Implementation using FIDO/WebAuthn
-- Example EAP Application Use Cases 
-- Security & Privacy Considerations
-- EAP Profile Deployment Considerations
+1. What Is the EAP ACR Values 1.0?
+2. Example Technical Implementation using FIDO/WebAuthn
+3. Example EAP Application Use Cases 
+4. Security & Privacy Considerations
+5. EAP Profile Deployment Considerations
 
 ---
 
-## What Is the EAP ACR Values 1.0?
+## 1. What Is the EAP ACR Values 1.0?
 
 In Mar 2023,  OpenId Foundation published OpenID Foundation Final Specification introduces two new standardized `acr` (Authentication Context Class Reference) values:
 
@@ -44,7 +44,7 @@ These values are used in OpenID Connect flows to negotiate or assert stronger au
 
 ---
 
-##  Example Technical Implementation using FIDO/WebAuthn
+##  2. Example Technical Implementation using FIDO/WebAuthn
 
 Let’s walk through a WebAuthn-backed OpenID Connect authentication scenario.
 
@@ -67,11 +67,11 @@ nonce=set3wsxfe54s2233
 
 The OpenID Provider must:
 
-- Map `acr_values=phrh` to a WebAuthn/FIDO2 ceremony
-- Prompt the user to authenticate using a registered FIDO2 credential
-- Ensure that:
-  - Credential is resident and user-verified
-  - Authenticator is bound to hardware
+1. Map `acr_values=phrh` to a WebAuthn/FIDO2 ceremony
+2. Prompt the user to authenticate using a registered FIDO2 credential
+3. Ensure that Credential is resident and user-verified; and Authenticator is bound to hardware
+
+Below is sample code (java) for validation  
 
 ```` java
 import com.nimbusds.oauth2.sdk.id.ClientID;
@@ -158,7 +158,7 @@ where:
 
 ---
 
-## Example EAP Application Use Cases 
+## 3. Example EAP Application Use Cases 
 
 
 * **Government Portals :** Government enables EAP profile to allow citizen login
@@ -168,7 +168,7 @@ where:
 
 ---
 
-## Security & Privacy Considerations
+## 4. Security & Privacy Considerations
 
  **1. Phishing Resistance :**
   - EAP enforces the use of phishing-resistant authentication methods e.g. FIDO2/WebAuthn methods rely on public key cryptography for integrity and trust.
@@ -187,7 +187,7 @@ These considerations make EAP a highly secure and privacy-preserving standard, s
 
 ---
 
-## EAP Profile Deployment Considerations
+## 5. EAP Profile Deployment Considerations
 
 When deploying the EAP based security, it is essential to follow these considerations to ensure a secure and seamless user experience:
 
