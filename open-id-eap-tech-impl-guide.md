@@ -49,8 +49,7 @@ In this scenario (below) /authorize request tells the OpenID Provider (OP) to us
 ### Step 1: Relying Party Initiates Authentication Request
 
 ````http
-GET https://idp.open-id-auth-server/oauth/v1/authorize?
-response_type=code&
+GET https://idp.open-id-auth-server/oauth/v1/authorize?response_type=code&
 client_id=test-client-id&
 scope=openid profile email&
 redirect_uri=https://mysecureapp.com/callback&
